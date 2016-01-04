@@ -7,7 +7,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 
 import yalantis.com.sidemenu.interfaces.ScreenShotable;
 import yalantis.com.sidemenu.sample.R;
@@ -15,15 +14,15 @@ import yalantis.com.sidemenu.sample.R;
 /**
  * Created by Konstantin on 22.12.2014.
  */
-public class ContentFragment extends Fragment implements ScreenShotable {
+public class MapFragment extends Fragment implements ScreenShotable {
 
     private View containerView;
-    protected ImageView mImageView;
-    protected int res;
+    protected MapFragment mMap;
+//    protected int res;
     private Bitmap bitmap;
 
-    public static ContentFragment newInstance(int resId) {
-        ContentFragment contentFragment = new ContentFragment();
+    public static MapFragment newInstance(int resId) {
+        MapFragment contentFragment = new MapFragment();
         Bundle bundle = new Bundle();
         bundle.putInt(Integer.class.getName(), resId);
         contentFragment.setArguments(bundle);
@@ -40,17 +39,14 @@ public class ContentFragment extends Fragment implements ScreenShotable {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        res = getArguments().getInt(Integer.class.getName());
+//        res = getArguments().getInt(Integer.class.getName());
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_main, container, false);
-        mImageView = (ImageView) rootView.findViewById(R.id.image_content);
-        mImageView.setClickable(true);
-        mImageView.setFocusable(true);
-        mImageView.setImageResource(res);
+        View rootView = inflater.inflate(R.layout.fragment_map, container, false);
+//        mMap = (MapFragment) rootView.findViewById(R.id.map);
         return rootView;
     }
 
@@ -63,7 +59,7 @@ public class ContentFragment extends Fragment implements ScreenShotable {
 //                        containerView.getHeight(), Bitmap.Config.ARGB_8888);
 //                Canvas canvas = new Canvas(bitmap);
 //                containerView.draw(canvas);
-//                ContentFragment.this.bitmap = bitmap;
+//                MapFragment.this.bitmap = bitmap;
             }
         };
 

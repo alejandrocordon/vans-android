@@ -15,15 +15,15 @@ import yalantis.com.sidemenu.sample.R;
 /**
  * Created by Konstantin on 22.12.2014.
  */
-public class ContentFragment extends Fragment implements ScreenShotable {
+public class ContactFragment extends Fragment implements ScreenShotable {
 
     private View containerView;
     protected ImageView mImageView;
     protected int res;
     private Bitmap bitmap;
 
-    public static ContentFragment newInstance(int resId) {
-        ContentFragment contentFragment = new ContentFragment();
+    public static ContactFragment newInstance(int resId) {
+        ContactFragment contentFragment = new ContactFragment();
         Bundle bundle = new Bundle();
         bundle.putInt(Integer.class.getName(), resId);
         contentFragment.setArguments(bundle);
@@ -63,7 +63,7 @@ public class ContentFragment extends Fragment implements ScreenShotable {
 //                        containerView.getHeight(), Bitmap.Config.ARGB_8888);
 //                Canvas canvas = new Canvas(bitmap);
 //                containerView.draw(canvas);
-//                ContentFragment.this.bitmap = bitmap;
+//                ContactFragment.this.bitmap = bitmap;
             }
         };
 

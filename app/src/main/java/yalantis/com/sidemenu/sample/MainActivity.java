@@ -8,6 +8,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -22,15 +23,31 @@ import io.codetail.animation.ViewAnimationUtils;
 import yalantis.com.sidemenu.interfaces.Resourceble;
 import yalantis.com.sidemenu.interfaces.ScreenShotable;
 import yalantis.com.sidemenu.model.SlideMenuItem;
+import yalantis.com.sidemenu.sample.fragment.AboutFragment;
+import yalantis.com.sidemenu.sample.fragment.ContactFragment;
 import yalantis.com.sidemenu.sample.fragment.ContentFragment;
+import yalantis.com.sidemenu.sample.fragment.MapFragment;
 import yalantis.com.sidemenu.util.ViewAnimator;
 
 
 public class MainActivity extends ActionBarActivity implements ViewAnimator.ViewAnimatorListener {
+
+    private String TAG = getClass().getSimpleName();
+
+    public static final String CLOSE = "Close";
+    public static final String MAP = "Map";
+    public static final String ABOUT = "About";
+    public static final String CONTACT = "Contact";
+    public static final String CASE = "Case";
+    public static final String SHOP = "Shop";
+    public static final String PARTY = "Party";
+    public static final String MOVIE = "Movie";
+
+
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle drawerToggle;
     private List<SlideMenuItem> list = new ArrayList<>();
-    private ContentFragment contentFragment;
+    private MapFragment contentFragment;
     private ViewAnimator viewAnimator;
     private int res = R.drawable.content_music;
     private LinearLayout linearLayout;
@@ -40,7 +57,7 @@ public class MainActivity extends ActionBarActivity implements ViewAnimator.View
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        contentFragment = ContentFragment.newInstance(R.drawable.content_music);
+        contentFragment = MapFragment.newInstance(R.drawable.content_music);
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.content_frame, contentFragment)
                 .commit();
@@ -61,22 +78,22 @@ public class MainActivity extends ActionBarActivity implements ViewAnimator.View
     }
 
     private void createMenuList() {
-        SlideMenuItem menuItem0 = new SlideMenuItem(ContentFragment.CLOSE, R.drawable.icn_close);
+        SlideMenuItem menuItem0 = new SlideMenuItem(CLOSE, R.drawable.icn_close);
         list.add(menuItem0);
-        SlideMenuItem menuItem = new SlideMenuItem(ContentFragment.BUILDING, R.drawable.icn_1);
+        SlideMenuItem menuItem = new SlideMenuItem(MAP, R.drawable.icn_1);
         list.add(menuItem);
-        SlideMenuItem menuItem2 = new SlideMenuItem(ContentFragment.BOOK, R.drawable.icn_2);
+        SlideMenuItem menuItem2 = new SlideMenuItem(ABOUT, R.drawable.icn_2);
         list.add(menuItem2);
-        SlideMenuItem menuItem3 = new SlideMenuItem(ContentFragment.PAINT, R.drawable.icn_3);
+        SlideMenuItem menuItem3 = new SlideMenuItem(CONTACT, R.drawable.icn_3);
         list.add(menuItem3);
-        SlideMenuItem menuItem4 = new SlideMenuItem(ContentFragment.CASE, R.drawable.icn_4);
-        list.add(menuItem4);
-        SlideMenuItem menuItem5 = new SlideMenuItem(ContentFragment.SHOP, R.drawable.icn_5);
-        list.add(menuItem5);
-        SlideMenuItem menuItem6 = new SlideMenuItem(ContentFragment.PARTY, R.drawable.icn_6);
-        list.add(menuItem6);
-        SlideMenuItem menuItem7 = new SlideMenuItem(ContentFragment.MOVIE, R.drawable.icn_7);
-        list.add(menuItem7);
+//        SlideMenuItem menuItem4 = new SlideMenuItem(CASE, R.drawable.icn_4);
+//        list.add(menuItem4);
+//        SlideMenuItem menuItem5 = new SlideMenuItem(SHOP, R.drawable.icn_5);
+//        list.add(menuItem5);
+//        SlideMenuItem menuItem6 = new SlideMenuItem(PARTY, R.drawable.icn_6);
+//        list.add(menuItem6);
+//        SlideMenuItem menuItem7 = new SlideMenuItem(MOVIE, R.drawable.icn_7);
+//        list.add(menuItem7);
     }
 
 
@@ -147,7 +164,7 @@ public class MainActivity extends ActionBarActivity implements ViewAnimator.View
         }
     }
 
-    private ScreenShotable replaceFragment(ScreenShotable screenShotable, int topPosition) {
+    private ScreenShotable replaceFragment(Resourceble slideMenuItem, ScreenShotable screenShotable, int topPosition) {
         this.res = this.res == R.drawable.content_music ? R.drawable.content_films : R.drawable.content_music;
         View view = findViewById(R.id.content_frame);
         int finalRadius = Math.max(view.getWidth(), view.getHeight());
@@ -157,18 +174,42 @@ public class MainActivity extends ActionBarActivity implements ViewAnimator.View
 
         findViewById(R.id.content_overlay).setBackgroundDrawable(new BitmapDrawable(getResources(), screenShotable.getBitmap()));
         animator.start();
-        ContentFragment contentFragment = ContentFragment.newInstance(this.res);
-        getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, contentFragment).commit();
-        return contentFragment;
+
+        Log.e(TAG, "posicion : "+topPosition + " - name:"+slideMenuItem.getName());
+
+        switch (slideMenuItem.getName()) {
+            case MAP:
+                MapFragment mapFragment = MapFragment.newInstance(this.res);
+                getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, mapFragment).commit();
+                return mapFragment;
+
+            case ABOUT:
+                AboutFragment aboutFragment = AboutFragment.newInstance(this.res);
+                getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, aboutFragment).commit();
+                return aboutFragment;
+
+            case CONTACT:
+                ContactFragment contactFragment = ContactFragment.newInstance(this.res);
+                getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, contactFragment).commit();
+                return contactFragment;
+
+            default:
+                ContentFragment contentFragment = ContentFragment.newInstance(this.res);
+                getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, contentFragment).commit();
+                return contentFragment;
+
+        }
+
+
     }
 
     @Override
     public ScreenShotable onSwitch(Resourceble slideMenuItem, ScreenShotable screenShotable, int position) {
         switch (slideMenuItem.getName()) {
-            case ContentFragment.CLOSE:
+            case CLOSE:
                 return screenShotable;
             default:
-                return replaceFragment(screenShotable, position);
+                return replaceFragment(slideMenuItem, screenShotable, position);
         }
     }
 

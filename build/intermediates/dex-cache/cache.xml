@@ -2,25 +2,25 @@
 <items version="2" >
 
     <item
-        jar="/Users/alejandrocordonurena/vans/vans.Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jar="/Users/alejandrocordonurena/vans/vans-android/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="/Users/alejandrocordonurena/vans/vans.Android/app/build/intermediates/pre-dexed/debug/classes-7269f6f02d67917640171795921edd9aef002d3c.jar" />
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/alejandrocordonurena/vans/vans-android/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-5b086ac0f195fb3afe5327f79f73adafa507da00.jar" />
     </item>
     <item
-        jar="/Users/alejandrocordonurena/vans/vans.Android/app/build/intermediates/exploded-aar/com.yalantis/library/1.0/classes.jar"
+        jar="/Users/alejandrocordonurena/vans/vans-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/3.1.36/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="6eb73a03fd20f2cf10e80be7252f182fadcb1386">
-        <dex dex="/Users/alejandrocordonurena/vans/vans.Android/app/build/intermediates/pre-dexed/debug/classes-a3f9193f13ea1b8ecdf0086d5084c08503cb20d0.jar" />
+        sha1="7421dcb3ed9db47a59ec618e2398f0df65c2d480">
+        <dex dex="/Users/alejandrocordonurena/vans/vans-android/app/build/intermediates/pre-dexed/debug/classes-5eba0eb42c45d23805484016db3ffc95f71ce8bd.jar" />
     </item>
     <item
-        jar="/Users/alejandrocordonurena/vans/vans.Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jar="/Users/alejandrocordonurena/vans/vans-android/app/build/intermediates/exploded-aar/com.yalantis/library/1.0/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="/Users/alejandrocordonurena/vans/vans.Android/app/build/intermediates/pre-dexed/debug/classes-6384f7c93c4a927c9ccfd7df90da825ceda43a77.jar" />
+        sha1="727cbe2b868c587a67e9a03b077e88dd6da79fad">
+        <dex dex="/Users/alejandrocordonurena/vans/vans-android/app/build/intermediates/pre-dexed/debug/classes-68213004b0cd571bfb52ce955819e425aa991a7e.jar" />
     </item>
     <item
         jar="/Users/alejandrocordonurena/Downloads/Side-Menu.Android-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
@@ -30,18 +30,25 @@
         <dex dex="/Users/alejandrocordonurena/Downloads/Side-Menu.Android-master/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-e6c4df8f3dcd42fdcb453998bcc3dfab458aa6f2.jar" />
     </item>
     <item
-        jar="/Users/alejandrocordonurena/vans/vans.Android/app/build/intermediates/exploded-aar/com.github.ozodrukh/CircularReveal/1.0.4/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="57c231461bd4ab97550b0b053c159e4f13ffc869">
-        <dex dex="/Users/alejandrocordonurena/vans/vans.Android/app/build/intermediates/pre-dexed/debug/classes-686b1c901b75b0e411df154eecf4c763ce11a2ec.jar" />
-    </item>
-    <item
         jar="/Users/alejandrocordonurena/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
         <dex dex="/Users/alejandrocordonurena/Downloads/Side-Menu.Android-master/app/build/intermediates/pre-dexed/debug/library-2.4.0-7820e120d35e572080cee63c4cd0b2dfdb40936e.jar" />
+    </item>
+    <item
+        jar="/Users/alejandrocordonurena/vans/vans-android/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/alejandrocordonurena/vans/vans-android/app/build/intermediates/pre-dexed/debug/classes-073bced36106f1b32bdb4416b98464759e44a358.jar" />
+    </item>
+    <item
+        jar="/Users/alejandrocordonurena/Downloads/Side-Menu.Android-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/alejandrocordonurena/Downloads/Side-Menu.Android-master/app/build/intermediates/pre-dexed/debug/classes-c37776dd48282550573acded9522430e03e043fd.jar" />
     </item>
     <item
         jar="/Users/alejandrocordonurena/Downloads/Side-Menu.Android-master/app/build/intermediates/exploded-aar/com.yalantis/library/1.0/classes.jar"
@@ -51,11 +58,11 @@
         <dex dex="/Users/alejandrocordonurena/Downloads/Side-Menu.Android-master/app/build/intermediates/pre-dexed/debug/classes-2dcd7014248f0137debc35efed3736f99a499617.jar" />
     </item>
     <item
-        jar="/Users/alejandrocordonurena/Downloads/Side-Menu.Android-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jar="/Users/alejandrocordonurena/vans/vans-android/app/build/intermediates/exploded-aar/com.github.ozodrukh/CircularReveal/1.0.4/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="/Users/alejandrocordonurena/Downloads/Side-Menu.Android-master/app/build/intermediates/pre-dexed/debug/classes-c37776dd48282550573acded9522430e03e043fd.jar" />
+        sha1="57c231461bd4ab97550b0b053c159e4f13ffc869">
+        <dex dex="/Users/alejandrocordonurena/vans/vans-android/app/build/intermediates/pre-dexed/debug/classes-f45865ed30cef04e5d5bd4a9731a223a59437142.jar" />
     </item>
     <item
         jar="/Users/alejandrocordonurena/Downloads/Side-Menu.Android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
@@ -72,11 +79,11 @@
         <dex dex="/Users/alejandrocordonurena/Downloads/Side-Menu.Android-master/app/build/intermediates/pre-dexed/debug/classes-c45b475c91364f844374817c94036e674dfcc4dc.jar" />
     </item>
     <item
-        jar="/Users/alejandrocordonurena/vans/vans.Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jar="/Users/alejandrocordonurena/vans/vans-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="/Users/alejandrocordonurena/vans/vans.Android/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-826e64df8aa274af554746da2b2b1505ba43c2fc.jar" />
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/Users/alejandrocordonurena/vans/vans-android/app/build/intermediates/pre-dexed/debug/classes-c744676d35b0a2f4cb915a16d3ee773f93ab07d4.jar" />
     </item>
     <item
         jar="/Users/alejandrocordonurena/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
