@@ -7,7 +7,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
+import android.widget.TextView;
 
 import yalantis.com.sidemenu.interfaces.ScreenShotable;
 import yalantis.com.sidemenu.sample.R;
@@ -18,14 +18,15 @@ import yalantis.com.sidemenu.sample.R;
 public class AboutFragment extends Fragment implements ScreenShotable {
 
     private View containerView;
-    protected ImageView mImageView;
-    protected int res;
+//    protected ImageView mImageView;
+//    protected int res;
+    private TextView text_vans;
     private Bitmap bitmap;
 
     public static AboutFragment newInstance(int resId) {
         AboutFragment contentFragment = new AboutFragment();
         Bundle bundle = new Bundle();
-        bundle.putInt(Integer.class.getName(), resId);
+//        bundle.putInt(Integer.class.getName(), resId);
         contentFragment.setArguments(bundle);
         return contentFragment;
     }
@@ -40,17 +41,22 @@ public class AboutFragment extends Fragment implements ScreenShotable {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        res = getArguments().getInt(Integer.class.getName());
+//        res = getArguments().getInt(Integer.class.getName());
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_main, container, false);
-        mImageView = (ImageView) rootView.findViewById(R.id.image_content);
-        mImageView.setClickable(true);
-        mImageView.setFocusable(true);
-        mImageView.setImageResource(res);
+        View rootView = inflater.inflate(R.layout.fragment_about, container, false);
+        text_vans  = (TextView) rootView.findViewById(R.id.textView);
+
+        text_vans.setText(getResources().getString(R.string.VANS_ABOUT_description));
+
+
+//        mImageView = (ImageView) rootView.findViewById(R.id.image_content);
+//        mImageView.setClickable(true);
+//        mImageView.setFocusable(true);
+//        mImageView.setImageResource(res);
         return rootView;
     }
 

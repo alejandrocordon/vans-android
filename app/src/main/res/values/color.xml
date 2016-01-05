@@ -1,0 +1,271 @@
+<resources>
+
+    <color name="transparent">#0000</color>
+
+    <color name="Black">#000000</color>
+    <color name="White">#FFFFFF</color>
+
+    <!--Red-->
+    <color name="Red_A100">#FFCDD2</color>
+    <color name="Red_A200">#EF9A9A</color>
+    <color name="Red_A400">#EF5350</color>
+    <color name="Red_A500">#F44336</color>
+    <color name="Red_A600">#E53935</color>
+    <color name="Red_A700">#D32F2F</color>
+    <color name="Red_A800">#C62828</color>
+    <color name="Red_A900">#B71C1C</color>
+
+
+    <!--Grey-->
+    <color name="Grey_A100">#F5F5F5</color>
+    <color name="Grey_A200">#EEEEEE</color>
+    <color name="Grey_A400">#BDBDBD</color>
+    <color name="Grey_A500">#9E9E9E</color>
+    <color name="Grey_A600">#757575</color>
+    <color name="Grey_A700">#616161</color>
+    <color name="Grey_A800">#424242</color>
+    <color name="Grey_A900">#212121</color>
+
+    <color name="black_overlay">#66000000</color>
+
+
+    <!--Amber-->
+    <color name="Amber_A50"> #FFF8E1</color>
+    <color name="Amber_A100">#FFECB3</color>
+    <color name="Amber_A200">#FFE082</color>
+    <color name="Amber_A300">#FFD54F</color>
+    <color name="Amber_A400">#FFCA28</color>
+    <color name="Amber_A500">#FFC107</color>
+    <color name="Amber_A600">#FFB300</color>
+    <color name="Amber_A700">#FFA000</color>
+    <color name="Amber_A800">#FF8F00</color>
+    <color name="Amber_A900">#FFAB00</color>
+
+    <!--Orange-->
+    <color name="Orange_A50"> #FFF3E0</color>
+    <color name="Orange_A100">#FFE0B2</color>
+    <color name="Orange_A200">#FFCC80</color>
+    <color name="Orange_A300">#FFB74D</color>
+    <color name="Orange_A400">#FFA726</color>
+    <color name="Orange_A500">#FF9800</color>
+    <color name="Orange_A600">#FB8C00</color>
+    <color name="Orange_A700">#F57C00</color>
+    <color name="Orange_A800">#EF6C00</color>
+    <color name="Orange_A900">#E65100</color>
+
+
+    <!--DeepOrange-->
+    <color name="DeepOrange_A50"> #FBE9E7</color>
+    <color name="DeepOrange_A100">#FFCCBC</color>
+    <color name="DeepOrange_A200">#FFAB91</color>
+    <color name="DeepOrange_A300">#FF8A65</color>
+    <color name="DeepOrange_A400">#FF7043</color>
+    <color name="DeepOrange_A500">#FF5722</color>
+    <color name="DeepOrange_A600">#F4511E</color>
+    <color name="DeepOrange_A700">#E64A19</color>
+    <color name="DeepOrange_A800">#D84315</color>
+    <color name="DeepOrange_A900">#BF360C</color>
+
+
+
+    <!--Brown-->
+    <color name="Brown_A50"> #EFEBE9</color>
+    <color name="Brown_A100">#D7CCC8</color>
+    <color name="Brown_A200">#BCAAA4</color>
+    <color name="Brown_A300">#A1887F</color>
+    <color name="Brown_A400">#8D6E63</color>
+    <color name="Brown_A500">#795548</color>
+    <color name="Brown_A600">#6D4C41</color>
+    <color name="Brown_A700">#5D4037</color>
+    <color name="Brown_A800">#4E342E</color>
+    <color name="Brown_A900">#3E2723</color>
+
+
+    <!--BlueGrey-->
+    <color name="BlueGrey_A50"> #ECEFF1</color>
+    <color name="BlueGrey_A100">#CFD8DC</color>
+    <color name="BlueGrey_A200">#B0BEC5</color>
+    <color name="BlueGrey_A300">#90A4AE</color>
+    <color name="BlueGrey_A400">#78909C</color>
+    <color name="BlueGrey_A500">#607D8B</color>
+    <color name="BlueGrey_A600">#546E7A</color>
+    <color name="BlueGrey_A700">#455A64</color>
+    <color name="BlueGrey_A800">#37474F</color>
+    <color name="BlueGrey_A900">#263238</color>
+
+
+
+    <!--Yellow-->
+    <color name="Yellow_A50"> #FFFDE7</color>
+    <color name="Yellow_A100">#FFF9C4</color>
+    <color name="Yellow_A200">#FFF59D</color>
+    <color name="Yellow_A300">#FFF176</color>
+    <color name="Yellow_A400">#FFEE58</color>
+    <color name="Yellow_A500">#FFEB3B</color>
+    <color name="Yellow_A600">#FDD835</color>
+    <color name="Yellow_A700">#FBC02D</color>
+    <color name="Yellow_A800">#F9A825</color>
+    <color name="Yellow_A900">#F57F17</color>
+
+
+    <!--Lime-->
+    <color name="Lime_A50"> #F9FBE7</color>
+    <color name="Lime_A100">#F0F4C3</color>
+    <color name="Lime_A200">#E6EE9C</color>
+    <color name="Lime_A300">#DCE775</color>
+    <color name="Lime_A400">#D4E157</color>
+    <color name="Lime_A500">#CDDC39</color>
+    <color name="Lime_A600">#C0CA33</color>
+    <color name="Lime_A700">#AFB42B</color>
+    <color name="Lime_A800">#9E9D24</color>
+    <color name="Lime_A900">#827717</color>
+
+
+    <!--LightGreen-->
+    <color name="LightGreen_A50"> #F1F8E9</color>
+    <color name="LightGreen_A100">#DCEDC8</color>
+    <color name="LightGreen_A200">#C5E1A5</color>
+    <color name="LightGreen_A300">#AED581</color>
+    <color name="LightGreen_A400">#9CCC65</color>
+    <color name="LightGreen_A500">#8BC34A</color>
+    <color name="LightGreen_A600">#7CB342</color>
+    <color name="LightGreen_A700">#689F38</color>
+    <color name="LightGreen_A800">#558B2F</color>
+    <color name="LightGreen_A900">#33691E</color>
+
+
+
+    <!-- Green-->
+    <color name="Green_A50"> #E8F5E9</color>
+    <color name="Green_A100">#C8E6C9</color>
+    <color name="Green_A200">#A5D6A7</color>
+    <color name="Green_A300">#81C784</color>
+    <color name="Green_A400">#66BB6A</color>
+    <color name="Green_A500">#4CAF50</color>
+    <color name="Green_A600">#43A047</color>
+    <color name="Green_A700">#388E3C</color>
+    <color name="Green_A800">#2E7D32</color>
+    <color name="Green_A900">#1B5E20</color>
+
+
+    <!-- Teal-->
+    <color name="Teal_A50"> #E0F2F1</color>
+    <color name="Teal_A100">#B2DFDB</color>
+    <color name="Teal_A200">#80CBC4</color>
+    <color name="Teal_A300">#4DB6AC</color>
+    <color name="Teal_A400">#26A69A</color>
+    <color name="Teal_A500">#009688</color>
+    <color name="Teal_A600">#00897B</color>
+    <color name="Teal_A700">#00796B</color>
+    <color name="Teal_A800">#00695C</color>
+    <color name="Teal_A900">#004D40</color>
+
+
+
+    <!-- Cyan-->
+    <color name="Cyan_A50"> #E0F7FA</color>
+    <color name="Cyan_A100">#B2EBF2</color>
+    <color name="Cyan_A200">#80DEEA</color>
+    <color name="Cyan_A300">#4DD0E1</color>
+    <color name="Cyan_A400">#26C6DA</color>
+    <color name="Cyan_A500">#00BCD4</color>
+    <color name="Cyan_A600">#00ACC1</color>
+    <color name="Cyan_A700">#0097A7</color>
+    <color name="Cyan_A800">#00838F</color>
+    <color name="Cyan_A900">#006064</color>
+
+
+
+    <!-- Indigo-->
+    <color name="Indigo_A50"> #E3F2FD</color>
+    <color name="Indigo_A100">#BBDEFB</color>
+    <color name="Indigo_A200">#90CAF9</color>
+    <color name="Indigo_A300">#64B5F6</color>
+    <color name="Indigo_A400">#42A5F5</color>
+    <color name="Indigo_A500">#2196F3</color>
+    <color name="Indigo_A600">#1E88E5</color>
+    <color name="Indigo_A700">#1976D2</color>
+    <color name="Indigo_A800">#1565C0</color>
+    <color name="Indigo_A900">#0D47A1</color>
+
+
+
+</resources>
+
+    <!--&lt;!&ndash; Indigo&ndash;&gt;-->
+    <!--<color name="Grey_A50"> #E3F2FD</color>-->
+    <!--<color name="Grey_A100">#BBDEFB</color>-->
+    <!--<color name="Grey_A200">#90CAF9</color>-->
+    <!--<color name="Grey_A300">#64B5F6</color>-->
+    <!--<color name="Grey_A400">#42A5F5</color>-->
+    <!--<color name="Grey_A500">#2196F3</color>-->
+    <!--<color name="Grey_A600">#1E88E5</color>-->
+    <!--<color name="Grey_A700">#1976D2</color>-->
+    <!--<color name="Grey_A800">#1565C0</color>-->
+    <!--<color name="Grey_A900">#0D47A1</color>-->
+
+
+
+
+    <!--Light Blue-->
+    <!--50 #E1F5FE-->
+    <!--100#B3E5FC-->
+    <!--200#81D4FA-->
+    <!--300#4FC3F7-->
+    <!--400#29B6F6-->
+    <!--500#03A9F4-->
+    <!--600#039BE5-->
+    <!--700#0288D1-->
+    <!--800#0277BD-->
+    <!--900#01579B-->
+
+    <!--Blue-->
+    <!--50 #E3F2FD-->
+    <!--100#BBDEFB-->
+    <!--200#90CAF9-->
+    <!--300#64B5F6-->
+    <!--400#42A5F5-->
+    <!--500#2196F3-->
+    <!--600#1E88E5-->
+    <!--700#1976D2-->
+    <!--800#1565C0-->
+    <!--900#0D47A1-->
+
+
+    <!--Deep Purple-->
+    <!--50 #EDE7F6-->
+    <!--100#D1C4E9-->
+    <!--200#B39DDB-->
+    <!--300#9575CD-->
+    <!--400#7E57C2-->
+    <!--500#673AB7-->
+    <!--600#5E35B1-->
+    <!--700#512DA8-->
+    <!--800#4527A0-->
+    <!--900#311B92-->
+
+    <!--Purple-->
+    <!--50 #F3E5F5-->
+    <!--100#E1BEE7-->
+    <!--200#CE93D8-->
+    <!--300#BA68C8-->
+    <!--400#AB47BC-->
+    <!--500#9C27B0-->
+    <!--600#8E24AA-->
+    <!--700#7B1FA2-->
+    <!--800#6A1B9A-->
+    <!--900#4A148C-->
+
+    <!--Pink-->
+    <!--50 #FCE4EC-->
+    <!--100#F8BBD0-->
+    <!--200#F48FB1-->
+    <!--300#F06292-->
+    <!--400#EC407A-->
+    <!--500#E91E63-->
+    <!--600#D81B60-->
+    <!--700#C2185B-->
+    <!--800#AD1457-->
+    <!--900#880E4F-->
+
+

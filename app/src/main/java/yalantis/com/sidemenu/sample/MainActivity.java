@@ -80,11 +80,11 @@ public class MainActivity extends ActionBarActivity implements ViewAnimator.View
     private void createMenuList() {
         SlideMenuItem menuItem0 = new SlideMenuItem(CLOSE, R.drawable.icn_close);
         list.add(menuItem0);
-        SlideMenuItem menuItem = new SlideMenuItem(MAP, R.drawable.icn_1);
+        SlideMenuItem menuItem = new SlideMenuItem(MAP, R.drawable.map);
         list.add(menuItem);
-        SlideMenuItem menuItem2 = new SlideMenuItem(ABOUT, R.drawable.icn_2);
+        SlideMenuItem menuItem2 = new SlideMenuItem(ABOUT, R.drawable.google_plus);
         list.add(menuItem2);
-        SlideMenuItem menuItem3 = new SlideMenuItem(CONTACT, R.drawable.icn_3);
+        SlideMenuItem menuItem3 = new SlideMenuItem(CONTACT, R.drawable.contact_mail);
         list.add(menuItem3);
 //        SlideMenuItem menuItem4 = new SlideMenuItem(CASE, R.drawable.icn_4);
 //        list.add(menuItem4);
